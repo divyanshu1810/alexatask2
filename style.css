@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 55px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: beige;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+#navbar h1 {
+    font-size: 60px;
+    top: 25px;
+    height: 120px;
+    margin: 4px 6px;
+    width: 50px;
+    left: 50px;
+    position: relative;
+}
+
+#navbar ul{
+    position: relative;
+    left: 50%;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    
+}
+#navbar ul li{
+    float: right;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#navbar ul li a{
+    float: right;
+    position: relative;
+    align-items: center;
+    color: black;
+    display: block;
+    padding: 3px 15px;
+    text-decoration:none;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li img{
+    display: inline-block;
+    width: 100px;
+
+}
+#home{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 600px;
+    height: 550px;
+    width: 1000px;
+    z-index: -2;
+    justify-content: center;
+    align-items:center;
+    background-image: url(bg1.jpeg);
+    background-position:15%;;
+    background-repeat: no-repeat;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+}
+
+#home h1{
+    left: 90%;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#home span{
+    text-align: left;
+    font-size: 28px;
+    position: relative;
+    top: 30px;
+}
+
+#home p{
+    text-align: left;
+    font-size: 28px;
+    position: relative;
+    top: 50px;
+    font-weight: bolder;
+}
+
+#home button{
+    cursor: pointer;
+    padding: 20px 17px;
+    background-color: greenyellow;
+    text-align: center;
+    font-weight: bolder;
+
+    width: 644px;
+}
+#home button:hover{
+    cursor: pointer;
+}
+
+#home input{
+    padding: 10px 34px;
+    background: none;
+    text-align: left;
+    margin: 40px;
+    width: 575px;
+    border-width: 0 0 3px;
+}
+#features{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    height: 777px;
+    background-color: rgb(246 251 255);
+    
+    justify-content: center;
+    align-items:center;
+    background-image: url(bg2copy.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    
+}
